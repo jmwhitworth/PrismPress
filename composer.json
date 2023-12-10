@@ -1,0 +1,11 @@
+{
+    "name": "jmwhitworth/prismpress",
+    "version": "1.0.0",
+    "type": "wordpress-plugin",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.jackwhitworth.com"
+        }
+    ]
+}

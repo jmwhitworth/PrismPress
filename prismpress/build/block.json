@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "prismpress/prismpress",
+  "version": "1.0.0",
+  "title": "Prism Code",
+  "category": "widgets",
+  "icon": "code",
+  "description": "A code block utilising Prism.js",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "prismpress",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
