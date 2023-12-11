@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "prismpress/prismpress",
+  "version": "1.0.0",
+  "title": "Prism Code",
+  "category": "text",
+  "icon": "media-code",
+  "description": "A code block utilising Prism.js",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "prismpress",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./style-index.css",
+  "style": "file:./style-index.css",
+  "script": "file:./view.js",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "language": {
+      "type": "string",
+      "default": "python"
+    },
+    "lineNumbers": {
+      "type": "boolean",
+      "default": true
+    },
+    "tagType": {
+      "type": "string"
+    }
+  }
+}

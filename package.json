@@ -1,28 +1,20 @@
 {
-  "name": "prismpress",
-  "version": "1.0.0",
-  "description": "Prism syntax highlighter wrapper for WordPress' Gutenberg editor",
-  "main": "index.js",
-  "scripts": {
-    "start": "wp-scripts start --webpack-src-dir=blocks/src/ --output-path=blocks/build/",
-    "build": "wp-scripts build --webpack-src-dir=blocks/src/ --output-path=blocks/build/",
-    "start:static": "wp-scripts start --webpack-src-dir=blocks/src/static --output-path=blocks/build/static",
-    "build:static": "wp-scripts build --webpack-src-dir=blocks/src/static --output-path=blocks/build/static",
-    "start:dynamic": "wp-scripts start --webpack-src-dir=blocks/src/dynamic --output-path=blocks/build/dynamic",
-    "build:dynamic": "wp-scripts build --webpack-src-dir=blocks/src/dynamic --output-path=blocks/build/dynamic"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jmwhitworth/prismpress.git"
-  },
-  "author": "Jack Whitworth",
-  "license": "GPL-3.0+",
-  "bugs": {
-    "url": "https://github.com/jmwhitworth/prismpress/issues"
-  },
-  "homepage": "https://github.com/jmwhitworth/prismpress#readme",
-  "devDependencies": {
-    "@wordpress/create-block": "^4.31.0",
-    "@wordpress/scripts": "^26.18.0"
-  }
+	"name": "prismpress",
+	"version": "1.0.0",
+	"description": "A code block utilising Prism.js",
+	"author": "Jack Whitworth",
+	"license": "GPL-3.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.18.0"
+	}
 }
