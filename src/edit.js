@@ -1,9 +1,9 @@
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import { useEffect } from 'react';
 import { PanelBody, SelectControl, TextareaControl } from '@wordpress/components';
-
 import './style.scss';
 import './view.js';
+
 
 export default function Edit({ attributes, setAttributes }) {
 	const languageClass = 'language-' + attributes.language;
@@ -13,10 +13,9 @@ export default function Edit({ attributes, setAttributes }) {
 		window.Prism && window.Prism.highlightAll();
 	};
 
-	// Initialize Prism.js when the component mounts or updates, including content as a dependency
 	useEffect(() => {
 		initializePrism();
-	}, [attributes.content]);
+	}, [attributes.content, attributes.language]);
 
 	return (
 		<>

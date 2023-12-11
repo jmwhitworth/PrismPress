@@ -16,7 +16,6 @@
   "editorStyle": "file:./style-index.css",
   "style": "file:./style-index.css",
   "script": "file:./view.js",
-  "viewScript": "file:./view.js",
   "attributes": {
     "content": {
       "type": "string",
@@ -25,13 +24,6 @@
     "language": {
       "type": "string",
       "default": "python"
-    },
-    "lineNumbers": {
-      "type": "boolean",
-      "default": true
-    },
-    "tagType": {
-      "type": "string"
     }
   }
 }

@@ -1,4 +1,3 @@
-
 export default function save({ attributes }) {
 	const languageClass = 'language-' + attributes.language;
 
