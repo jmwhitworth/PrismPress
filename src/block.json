@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "prismpress/prismpress",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"title": "Prism Code",
     "category": "text",
 	"icon": "media-code",
@@ -24,6 +24,10 @@
         "language": {
             "type": "string",
             "default": "python"
-        }
+        },
+		"lineNumbers": {
+			"type": "boolean",
+			"default": true
+		}
     }
 }

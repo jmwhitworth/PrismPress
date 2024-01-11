@@ -24,6 +24,10 @@
     "language": {
       "type": "string",
       "default": "python"
+    },
+    "lineNumbers": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

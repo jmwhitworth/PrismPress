@@ -1,6 +1,5 @@
 {
 	"name": "prismpress",
-	"version": "1.0.0",
 	"description": "A code block utilising Prism.js",
 	"author": "Jack Whitworth",
 	"license": "GPL-3.0-or-later",
