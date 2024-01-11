@@ -1,12 +1,13 @@
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import { useEffect } from 'react';
-import { PanelBody, SelectControl, TextareaControl } from '@wordpress/components';
+import { PanelBody, SelectControl, TextareaControl, ToggleControl } from '@wordpress/components';
 import './style.scss';
 import './view.js';
 
 
 export default function Edit({ attributes, setAttributes }) {
-	const languageClass = 'language-' + attributes.language;
+	const languageClass = `language-${attributes.language}`;
+	const lineNumbersClass = attributes.lineNumbers ? 'line-numbers' : '';
 
 	// Function to initialize Prism.js
 	const initializePrism = () => {
@@ -15,7 +16,7 @@ export default function Edit({ attributes, setAttributes }) {
 
 	useEffect(() => {
 		initializePrism();
-	}, [attributes.content, attributes.language]);
+	}, [attributes.content, attributes.language, attributes.lineNumbers]);
 
 	return (
 		<>
@@ -23,7 +24,7 @@ export default function Edit({ attributes, setAttributes }) {
 				<PanelBody title="Block Settings">
 					<SelectControl
 						label="Language"
-						value={attributes.language}
+						value={ attributes.language }
 						options={[
 							{ label: 'Python', value: 'python' },
 							{ label: 'PHP', value: 'php' },
@@ -34,20 +35,25 @@ export default function Edit({ attributes, setAttributes }) {
 							{ label: 'XML', value: 'xml' },
 							{ label: 'Plain Text', value: 'plaintext' },
 						]}
-						onChange={(language) => setAttributes({ language })}
+						onChange={ (language) => setAttributes({ language }) }
+					/>
+					<ToggleControl
+						label="Show line numbers"
+						checked={ attributes.lineNumbers }
+						onChange={ (lineNumbers) => setAttributes({ lineNumbers }) }
 					/>
 					<TextareaControl
 						label="Text"
-						value={attributes.content}
-						onChange={(content) => setAttributes({ content })}
+						value={ attributes.content }
+						onChange={ (content) => setAttributes({ content }) }
 					/>
 				</PanelBody>
 			</InspectorControls>
 
-			<div {...useBlockProps()}>
-				<pre className={'line-numbers ' + languageClass}>
-					<code className={languageClass} >
-						{attributes.content}
+			<div { ...useBlockProps() }>
+				<pre className={ lineNumbersClass }>
+					<code className={ languageClass }>
+						{ attributes.content }
 					</code>
 				</pre>
 			</div>
