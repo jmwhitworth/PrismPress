@@ -29,6 +29,7 @@ export default function Edit({ attributes, setAttributes }) {
 							{ label: 'Python', value: 'python' },
 							{ label: 'PHP', value: 'php' },
 							{ label: 'JavaScript', value: 'javascript' },
+							{ label: 'JSON', value: 'json' },
 							{ label: 'BASH', value: 'bash' },
 							{ label: 'HTML', value: 'html' },
 							{ label: 'SVG', value: 'svg' },

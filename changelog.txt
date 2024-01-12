@@ -1,0 +1,5 @@
+- v1.2.0: Added JSON support
+
+- v1.1.0: Added line-number toggle
+
+- v1.0.0: Initial build
