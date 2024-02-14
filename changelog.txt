@@ -1,3 +1,5 @@
+- v1.2.4: Rebuild blocks
+
 - v1.2.3: Fix YAML option
 
 - v1.2.2: Added YAML support
