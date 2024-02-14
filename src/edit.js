@@ -33,6 +33,7 @@ export default function Edit({ attributes, setAttributes }) {
 							{ label: 'BASH', value: 'bash' },
 							{ label: 'HTML', value: 'html' },
 							{ label: 'SVG', value: 'svg' },
+							{ label: 'YAML', value: 'yaml' },
 							{ label: 'XML', value: 'xml' },
 							{ label: 'Plain Text', value: 'plaintext' },
 						]}

@@ -1,3 +1,5 @@
+- v1.2.3: Fix YAML option
+
 - v1.2.2: Added YAML support
 
 - v1.2.1: Added proper documentation to README.md & adjusted required software versions

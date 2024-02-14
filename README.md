@@ -1,6 +1,6 @@
 # PrismPress
 
-Version: `1.2.2`
+Version: `1.2.3`
 
 PrismPress is a WordPress plugin that adds a new Gutenberg block for display syntax-highlighted code powered by [Prism.js](https://prismjs.com/index.html).
 
