@@ -1,3 +1,5 @@
+- v1.3.1: Update dependencies and fixed version numbers
+
 - v1.3.0: Added support for auto updating
 
 - v1.2.4: Rebuild blocks
