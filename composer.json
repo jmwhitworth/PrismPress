@@ -1,10 +1,10 @@
 {
-    "name": "jmwhitworth/prismpress",
-    "type": "wordpress-plugin",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://composer.jackwhitworth.com"
-        }
-    ]
+	"name": "jmwhitworth/prismpress",
+	"type": "wordpress-plugin",
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://composer.jackwhitworth.com"
+		}
+	]
 }

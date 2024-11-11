@@ -1,4 +1,7 @@
 {
+	"engine": {
+		"node": ">=21"
+	},
 	"name": "prismpress",
 	"description": "A code block utilising Prism.js",
 	"author": "Jack Whitworth",
@@ -14,6 +17,6 @@
 		"start": "wp-scripts start"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^26.18.0"
+		"@wordpress/scripts": "^30.4.0"
 	}
 }

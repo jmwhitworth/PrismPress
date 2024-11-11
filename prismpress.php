@@ -4,8 +4,10 @@
  * Description:       A Gutenberg code block utilising Prism.js
  * Requires at least: 6.0
  * Requires PHP:      8.0
- * Version:           1.3.1
+ * Version:           1.3.2
  * Author:            Jack Whitworth
+ * Author URI:        https://jackwhitworth.com
+ * Plugin URI: https://github.com/jmwhitworth/PrismPress
  * License:           GPL-3.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       prismpress
